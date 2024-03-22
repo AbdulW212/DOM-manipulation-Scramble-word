@@ -1,0 +1,44 @@
+.title{
+   
+    font-size: 15vh;
+    color: brown;
+}
+
+
+.wordScramble{
+
+
+height: 40vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+
+.directions{
+    font-size: 5vh;
+    color: brown;
+    margin-left: 40%;
+    background-color: black;
+    width: 25%;
+}
+
+
+.letter{
+    border: solid black;
+    border-width: 5vh;
+    color:brown;
+    font-size: 25vh;
+}
+
+
+.scoreboard{
+    color: brown;
+    height: 15vh;
+    font-size: 15vh;
+}
+
+
+.img{
+   background-size: cover;
+}
