@@ -6,8 +6,6 @@
 
 
 .wordScramble{
-
-
 height: 40vh;
 display: flex;
 justify-content: space-around;
@@ -18,18 +16,50 @@ align-items: center;
 .directions{
     font-size: 5vh;
     color: brown;
-    margin-left: 40%;
+   
     background-color: black;
     width: 25%;
 }
 
+#div1{
+    display: flex;
+    border: solid black;
+    border-width: 5vh;
+    color:brown;
+    font-size: 25vh;
+    margin-left: 30%;
+}
 
-.letter{
+.btnSize{
+    height: 5em;
+    width: 5em;
+    background-color: brown;
+}
+
+#div2{
+    display: flex;
+    border: solid black;
+    border-width: 5vh;
+    color:brown;
+    font-size: 25vh;
+    margin-right: 25%;
+}
+
+/*.letter{
+    display: flex;
     border: solid black;
     border-width: 5vh;
     color:brown;
     font-size: 25vh;
 }
+
+.letter2{
+    display: flex;
+    border: solid black;
+    border-width: 5vh;
+    color:brown;
+    font-size: 25vh;
+} */
 
 
 .scoreboard{
@@ -42,3 +72,4 @@ align-items: center;
 .img{
    background-size: cover;
 }
+

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -14,22 +13,31 @@
        <!--Header1 -->
         <h1 class="title">Word Scramble</h1>
         <!--directions-->
-        <div class="directions">Click on any letter to start.<br>Then type what you think the word is.<br>Your score is at the bottom </div>
+        <div class="directions">Click on any letter to start.<br>Then type what you think the word is, if correct click on next word button.<br>Your score is at the bottom </div>
        <!--word scramble boxes with bacground pic-->
-        <div class="wordScramble">
+        <div id="wordScrambID" class="wordScramble">
            
-            <div class="letter" onclick="askQuestion(questionBox.q1.q,questionBox.q1.a)">A</div>
-            <div class="letter" onclick="askQuestion(questionBox.q1.q,questionBox.q1.a)">M</div>
-            <div class="letter" onclick="askQuestion(questionBox.q1.q,questionBox.q1.a)">R</div>
-         </div>
-       <!--Scoreboard-->
+            
+            <div id="div1">
+            <div class="letter"  onclick="askQuestion(questionBox.q1.q,questionBox.q1.a)">A</div>
+            <div class="letter"  onclick="askQuestion(questionBox.q1.q,questionBox.q1.a)">M</div>
+            <div class="letter"  onclick="askQuestion(questionBox.q1.q,questionBox.q1.a)">R</div>
+            </div>
+            <button class="btnSize" onclick="toggleDivs()">Next Word</button>
+            <div id="div2" style="display: none;">
+            <div class="letter2"  onclick="questionTwo(questionBox.q2.q,questionBox.q2.a)">A</div>
+            <div class="letter2"   onclick="questionTwo(questionBox.q2.q,questionBox.q2.a)">F</div>
+            <div class="letter2"   onclick="questionTwo(questionBox.q2.q,questionBox.q2.a)">N</div>
+            </div>
+         
+            </div> 
+       <!--Scoreboard----->
          <div class="scoreboard">
             <h2 class="scoreBoard">SCORE: <span class="points"></span></h2>
-           
+            
          </div>
 
-
-       
+        
         <script src="app.js" async defer></script>
     </body>
 </html>
